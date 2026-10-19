@@ -12,6 +12,7 @@
 </head>
 <body class="bg-slate-50 text-slate-800 min-h-screen pb-12">
 
+    <!-- 頂部 Header -->
     <header class="bg-indigo-600 text-white shadow-md py-6 px-4 mb-6">
         <div class="max-w-3xl mx-auto">
             <span class="bg-indigo-500 text-xs px-2.5 py-1 rounded-full font-medium tracking-wide">長榮航空 BR211 · 6天5夜</span>
@@ -33,17 +34,26 @@
 
         <!-- Day 1 -->
         <section class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
-            <div class="bg-slate-100 px-5 py-3 border-b border-slate-200 flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
+            <div class="bg-slate-100 px-5 py-3 border-b border-slate-200 flex justify-between items-center">
                 <h2 class="font-bold text-slate-700 text-lg">Day 1：10/22 (四) 飛抵曼谷 ➔ 暹羅商圈</h2>
-                <div class="flex items-center gap-2">
-                    <span class="text-xs bg-sky-100 text-sky-800 px-2 py-0.5 rounded font-medium">機場 ➔ 克利泰 ➔ 暹羅商圈</span>
-                    <span class="text-xs bg-amber-100 text-amber-800 px-2 py-0.5 rounded font-medium">住：克利泰</span>
+                <span class="text-xs bg-amber-100 text-amber-800 px-2 py-0.5 rounded font-medium">住：克利泰</span>
+            </div>
+            
+            <!-- 嵌入 Google 地圖與路線按鈕 -->
+            <div class="p-4 bg-slate-50 border-b border-slate-200">
+                <div class="flex justify-between items-center mb-2">
+                    <span class="text-xs font-bold text-indigo-700 flex items-center gap-1">🗺️ 今日 Google Maps 動線圖：</span>
+                    <a href="https://www.google.com/maps/dir/Suvarnabhumi+Airport/Krit+Thai+Residence/Jim+Thompson+House/Siam+Paragon" target="_blank" class="text-xs bg-indigo-600 hover:bg-indigo-700 text-white px-2.5 py-1 rounded font-medium shadow-2xs transition">📍 開啟 Google App 導航</a>
+                </div>
+                <div class="w-full h-48 rounded-lg overflow-hidden border border-slate-300">
+                    <iframe class="w-full h-full border-0" loading="lazy" allowfullscreen src="https://maps.google.com/maps?q=Krit+Thai+Residence+Siam+Paragon&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
                 </div>
             </div>
+
             <div class="p-5 space-y-3">
                 <label class="flex items-start gap-3 cursor-pointer hover:bg-slate-50 p-2 rounded transition">
                     <input type="checkbox" class="mt-1 w-4 h-4 text-indigo-600 rounded border-slate-300 focus:ring-indigo-500">
-                    <div><strong>08:20 - 11:10</strong>：搭乘長榮航空 <strong>BR211</strong> 班機由桃園 (TPE T2) 飛抵曼谷素萬那普機場 (<a href="https://maps.google.com/?q=Suvarnabhumi+Airport" target="_blank" class="text-indigo-600 underline">BKK 機場地圖 🗺️</a>)。</div>
+                    <div><strong>08:20 - 11:10</strong>：搭乘長榮航空 <strong>BR211</strong> 班機由桃園 (TPE T2) 飛抵曼谷素萬那普機場 (<a href="https://maps.google.com/?q=Suvarnabhumi+Airport" target="_blank" class="text-indigo-600 underline">BKK 機場 🗺️</a>)。</div>
                 </label>
                 <label class="flex items-start gap-3 cursor-pointer hover:bg-slate-50 p-2 rounded transition">
                     <input type="checkbox" class="mt-1 w-4 h-4 text-indigo-600 rounded border-slate-300 focus:ring-indigo-500">
@@ -62,13 +72,22 @@
 
         <!-- Day 2 -->
         <section class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
-            <div class="bg-slate-100 px-5 py-3 border-b border-slate-200 flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
+            <div class="bg-slate-100 px-5 py-3 border-b border-slate-200 flex justify-between items-center">
                 <h2 class="font-bold text-slate-700 text-lg">Day 2：10/23 (五) 嵩越路老街 ➔ ICONSIAM ➔ EMSPHERE</h2>
-                <div class="flex items-center gap-2">
-                    <span class="text-xs bg-sky-100 text-sky-800 px-2 py-0.5 rounded font-medium">克利泰 ➔ 嵩越路 ➔ 河岸 ➔ 歐姆史斐</span>
-                    <span class="text-xs bg-amber-100 text-amber-800 px-2 py-0.5 rounded font-medium">住：克利泰</span>
+                <span class="text-xs bg-amber-100 text-amber-800 px-2 py-0.5 rounded font-medium">住：克利泰</span>
+            </div>
+
+            <!-- 嵌入 Google 地圖與路線按鈕 -->
+            <div class="p-4 bg-slate-50 border-b border-slate-200">
+                <div class="flex justify-between items-center mb-2">
+                    <span class="text-xs font-bold text-indigo-700 flex items-center gap-1">🗺️ 今日 Google Maps 動線圖：</span>
+                    <a href="https://www.google.com/maps/dir/Krit+Thai+Residence/Song+Wat+Road/ICONSIAM/EMSPHERE" target="_blank" class="text-xs bg-indigo-600 hover:bg-indigo-700 text-white px-2.5 py-1 rounded font-medium shadow-2xs transition">📍 開啟 Google App 導航</a>
+                </div>
+                <div class="w-full h-48 rounded-lg overflow-hidden border border-slate-300">
+                    <iframe class="w-full h-full border-0" loading="lazy" allowfullscreen src="https://maps.google.com/maps?q=Song+Wat+Road+ICONSIAM+EMSPHERE&t=&z=12&ie=UTF8&iwloc=&output=embed"></iframe>
                 </div>
             </div>
+
             <div class="p-5 space-y-3">
                 <label class="flex items-start gap-3 cursor-pointer hover:bg-slate-50 p-2 rounded transition">
                     <input type="checkbox" class="mt-1 w-4 h-4 text-indigo-600 rounded border-slate-300 focus:ring-indigo-500">
@@ -87,38 +106,60 @@
 
         <!-- Day 3 -->
         <section class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
-            <div class="bg-slate-100 px-5 py-3 border-b border-slate-200 flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
-                <h2 class="font-bold text-slate-700 text-lg">Day 3：10/24 (六) 恰圖恰週末市集 ➔ 飯店換宿 ➔ 夜市</h2>
-                <div class="flex items-center gap-2">
-                    <span class="text-xs bg-sky-100 text-sky-800 px-2 py-0.5 rounded font-medium">恰圖恰 ➔ 相鐵換宿 ➔ 夜市</span>
-                    <span class="text-xs bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-medium">住：相鐵格蘭弗雷薩</span>
+            <div class="bg-slate-100 px-5 py-3 border-b border-slate-200 flex justify-between items-center">
+                <h2 class="font-bold text-slate-700 text-lg">Day 3：10/24 (六) 恰圖恰 ➔ BENKOFF 🐶 ➔ 換宿 ➔ 夜市</h2>
+                <span class="text-xs bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-medium">住：相鐵格蘭弗雷薩</span>
+            </div>
+
+            <!-- 嵌入 Google 地圖與路線按鈕 -->
+            <div class="p-4 bg-slate-50 border-b border-slate-200">
+                <div class="flex justify-between items-center mb-2">
+                    <span class="text-xs font-bold text-indigo-700 flex items-center gap-1">🗺️ 今日 Google Maps 動線圖：</span>
+                    <a href="https://www.google.com/maps/dir/Chatuchak+Weekend+Market/BENKOFF/Sotetsu+Grand+Fresa+Bangkok/Jodd+Fairs" target="_blank" class="text-xs bg-indigo-600 hover:bg-indigo-700 text-white px-2.5 py-1 rounded font-medium shadow-2xs transition">📍 開啟 Google App 導航</a>
+                </div>
+                <div class="w-full h-48 rounded-lg overflow-hidden border border-slate-300">
+                    <iframe class="w-full h-full border-0" loading="lazy" allowfullscreen src="https://maps.google.com/maps?q=Chatuchak+Weekend+Market+BENKOFF+Jodd+Fairs&t=&z=12&ie=UTF8&iwloc=&output=embed"></iframe>
                 </div>
             </div>
+
             <div class="p-5 space-y-3">
                 <label class="flex items-start gap-3 cursor-pointer hover:bg-slate-50 p-2 rounded transition">
                     <input type="checkbox" class="mt-1 w-4 h-4 text-indigo-600 rounded border-slate-300 focus:ring-indigo-500">
-                    <div><strong>上午</strong>：搭乘 BTS 直達 Mo Chit 站，逛全球最大的 <a href="https://maps.google.com/?q=Chatuchak+Weekend+Market" target="_blank" class="text-indigo-600 underline">恰圖恰週末市集 🗺️</a> 尋寶購物。</div>
+                    <div><strong>上午 (09:30 - 13:00)</strong>：搭乘 BTS 直達 Mo Chit 站，逛全球最大的 <a href="https://maps.google.com/?q=Chatuchak+Weekend+Market" target="_blank" class="text-indigo-600 underline">恰圖恰週末市集 🗺️</a> 尋寶購物。</div>
                 </label>
                 <label class="flex items-start gap-3 cursor-pointer hover:bg-slate-50 p-2 rounded transition">
                     <input type="checkbox" class="mt-1 w-4 h-4 text-indigo-600 rounded border-slate-300 focus:ring-indigo-500">
-                    <div><strong>下午</strong>：搭 BTS 至 Asok 站，將戰利品帶回 <a href="https://maps.google.com/?q=Sotetsu+Grand+Fresa+Bangkok" target="_blank" class="text-indigo-600 underline">Sotetsu Grand Fresa 🗺️</a> 辦理 Check-in，並至 Terminal 21 美食街簡單用餐。</div>
+                    <div><strong>下午 (14:00 - 15:30)</strong>：搭 BTS 至 Thong Lo 站，造訪爆紅臘腸狗咖啡廳 <a href="https://maps.google.com/?q=BENKOFF+Thonglor" target="_blank" class="text-indigo-600 underline">BENKOFF 🗺️</a> 與可愛店狗互動！</div>
                 </label>
                 <label class="flex items-start gap-3 cursor-pointer hover:bg-slate-50 p-2 rounded transition">
                     <input type="checkbox" class="mt-1 w-4 h-4 text-indigo-600 rounded border-slate-300 focus:ring-indigo-500">
-                    <div><strong>晚上</strong>：搭乘 MRT 至 Rama 9 站逛 <a href="https://maps.google.com/?q=Jodd+Fairs" target="_blank" class="text-indigo-600 underline">Jodd Fairs 火車夜市 🗺️</a> 享用晚餐。</div>
+                    <div><strong>傍晚 (16:00 - 17:30)</strong>：前往 <a href="https://maps.google.com/?q=Sotetsu+Grand+Fresa+Bangkok" target="_blank" class="text-indigo-600 underline">Sotetsu Grand Fresa 🗺️</a> 辦理 Check-in 置放戰利品。</div>
+                </label>
+                <label class="flex items-start gap-3 cursor-pointer hover:bg-slate-50 p-2 rounded transition">
+                    <input type="checkbox" class="mt-1 w-4 h-4 text-indigo-600 rounded border-slate-300 focus:ring-indigo-500">
+                    <div><strong>晚上 (18:00+)</strong>：搭乘 MRT 至 Rama 9 站逛 <a href="https://maps.google.com/?q=Jodd+Fairs" target="_blank" class="text-indigo-600 underline">Jodd Fairs 火車夜市 🗺️</a> 享用晚餐。</div>
                 </label>
             </div>
         </section>
 
         <!-- Day 4 -->
         <section class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
-            <div class="bg-slate-100 px-5 py-3 border-b border-slate-200 flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
+            <div class="bg-slate-100 px-5 py-3 border-b border-slate-200 flex justify-between items-center">
                 <h2 class="font-bold text-slate-700 text-lg">Day 4：10/25 (日) 經典三大古蹟巡禮 ➔ 昭披耶河夜景</h2>
-                <div class="flex items-center gap-2">
-                    <span class="text-xs bg-sky-100 text-sky-800 px-2 py-0.5 rounded font-medium">大皇宮 ➔ 臥佛寺 ➔ 鄭王廟 ➔ 河岸餐廳</span>
-                    <span class="text-xs bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-medium">住：相鐵格蘭弗雷薩</span>
+                <span class="text-xs bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-medium">住：相鐵格蘭弗雷薩</span>
+            </div>
+
+            <!-- 嵌入 Google 地圖與路線按鈕 -->
+            <div class="p-4 bg-slate-50 border-b border-slate-200">
+                <div class="flex justify-between items-center mb-2">
+                    <span class="text-xs font-bold text-indigo-700 flex items-center gap-1">🗺️ 今日 Google Maps 動線圖：</span>
+                    <a href="https://www.google.com/maps/dir/The+Grand+Palace/Wat+Pho/Wat+Arun" target="_blank" class="text-xs bg-indigo-600 hover:bg-indigo-700 text-white px-2.5 py-1 rounded font-medium shadow-2xs transition">📍 開啟 Google App 導航</a>
+                </div>
+                <div class="w-full h-48 rounded-lg overflow-hidden border border-slate-300">
+                    <iframe class="w-full h-full border-0" loading="lazy" allowfullscreen src="https://maps.google.com/maps?q=The+Grand+Palace+Wat+Pho+Wat+Arun&t=&z=14&ie=UTF8&iwloc=&output=embed"></iframe>
                 </div>
             </div>
+
             <div class="p-5 space-y-3">
                 <label class="flex items-start gap-3 cursor-pointer hover:bg-slate-50 p-2 rounded transition">
                     <input type="checkbox" class="mt-1 w-4 h-4 text-indigo-600 rounded border-slate-300 focus:ring-indigo-500">
@@ -141,13 +182,22 @@
 
         <!-- Day 5 -->
         <section class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
-            <div class="bg-slate-100 px-5 py-3 border-b border-slate-200 flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
+            <div class="bg-slate-100 px-5 py-3 border-b border-slate-200 flex justify-between items-center">
                 <h2 class="font-bold text-slate-700 text-lg">Day 5：10/26 (一) 綠洲公園 ➔ Big C 採買 ➔ 機場</h2>
-                <div class="flex items-center gap-2">
-                    <span class="text-xs bg-sky-100 text-sky-800 px-2 py-0.5 rounded font-medium">綠洲公園 ➔ Big C ➔ 飯店取行李 ➔ 機場</span>
-                    <span class="text-xs bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-medium">住：相鐵 (退房寄行李)</span>
+                <span class="text-xs bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-medium">住：退房寄行李</span>
+            </div>
+
+            <!-- 嵌入 Google 地圖與路線按鈕 -->
+            <div class="p-4 bg-slate-50 border-b border-slate-200">
+                <div class="flex justify-between items-center mb-2">
+                    <span class="text-xs font-bold text-indigo-700 flex items-center gap-1">🗺️ 今日 Google Maps 動線圖：</span>
+                    <a href="https://www.google.com/maps/dir/Benchakitti+Forest+Park/Big+C+Supercenter+Rajdamri/Suvarnabhumi+Airport" target="_blank" class="text-xs bg-indigo-600 hover:bg-indigo-700 text-white px-2.5 py-1 rounded font-medium shadow-2xs transition">📍 開啟 Google App 導航</a>
+                </div>
+                <div class="w-full h-48 rounded-lg overflow-hidden border border-slate-300">
+                    <iframe class="w-full h-full border-0" loading="lazy" allowfullscreen src="https://maps.google.com/maps?q=Benchakitti+Forest+Park+Big+C+Supercenter+Rajdamri&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
                 </div>
             </div>
+
             <div class="p-5 space-y-3">
                 <label class="flex items-start gap-3 cursor-pointer hover:bg-slate-50 p-2 rounded transition">
                     <input type="checkbox" class="mt-1 w-4 h-4 text-indigo-600 rounded border-slate-300 focus:ring-indigo-500">
@@ -170,12 +220,9 @@
 
         <!-- Day 6 -->
         <section class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
-            <div class="bg-slate-100 px-5 py-3 border-b border-slate-200 flex flex-col md:flex-row justify-between items-start md:items-center gap-2">
+            <div class="bg-slate-100 px-5 py-3 border-b border-slate-200 flex justify-between items-center">
                 <h2 class="font-bold text-slate-700 text-lg">Day 6：10/27 (二) 返回台北</h2>
-                <div class="flex items-center gap-2">
-                    <span class="text-xs bg-sky-100 text-sky-800 px-2 py-0.5 rounded font-medium">BKK ➔ 桃園機場</span>
-                    <span class="text-xs bg-purple-100 text-purple-800 px-2 py-0.5 rounded font-medium">長榮班機</span>
-                </div>
+                <span class="text-xs bg-purple-100 text-purple-800 px-2 py-0.5 rounded font-medium">長榮班機</span>
             </div>
             <div class="p-5 space-y-3">
                 <label class="flex items-start gap-3 cursor-pointer hover:bg-slate-50 p-2 rounded transition">
